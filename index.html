@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#071522">
   <title>Fortis Drones | DJI Drone Sourcing for Rwanda</title>
   <meta name="description" content="Fortis Drones sources DJI agricultural, thermal, mapping and cinematic drones from China and ships them to Rwanda.">
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/fortis-drones-favicon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -268,6 +269,30 @@
     .step h3 { margin: 14px 0 9px; font-size: 19px; }
     .step p { margin-bottom: 0; color: var(--muted); font-size: 14px; }
 
+    .team-section { background: #0a1c2a; }
+    .team-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
+    .team-card {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--panel);
+    }
+    .team-avatar {
+      width: 124px;
+      height: 124px;
+      flex: 0 0 auto;
+      overflow: hidden;
+      border: 1px solid rgba(193,229,106,.35);
+      border-radius: 50%;
+      background: #17364a;
+    }
+    .team-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .team-role { color: var(--lime); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .team-card h3 { margin: 8px 0 5px; font-size: 21px; }
+
     .inquiry-section { padding-top: 75px; }
     .inquiry-card {
       display: grid;
@@ -346,7 +371,10 @@
       .globe-svg { min-width: 590px; }
       .route-meta { flex-direction: column; align-items: center; gap: 5px; }
       .category-grid, .steps-grid { grid-template-columns: 1fr; }
+      .team-grid { grid-template-columns: 1fr; }
       .category-card img { height: 235px; }
+      .team-card { gap: 16px; padding: 18px; }
+      .team-avatar { width: 96px; height: 96px; }
       .category-card p { min-height: 0; }
       .steps-grid { gap: 26px; }
       .inquiry-section { padding-top: 30px; }
@@ -372,6 +400,7 @@
       <nav class="nav-links" aria-label="Main navigation">
         <a href="#categories" data-en="Drone categories" data-rw="Amoko ya drone">Drone categories</a>
         <a href="#journey" data-en="Shipping journey" data-rw="Urugendo rwo kohereza">Shipping journey</a>
+        <a href="#team" data-en="The team" data-rw="Itsinda">The team</a>
         <a href="#about" data-en="About us" data-rw="Abo turi bo">About us</a>
       </nav>
       <div style="display:flex;align-items:center;gap:12px">
@@ -505,6 +534,36 @@
           <article class="step"><div class="step-index">STEP 01</div><h3 data-en="Share your mission" data-rw="Tumenyeshe ibyo uzakora">Share your mission</h3><p data-en="Tell us your use case, location and must-have capabilities. We’ll help narrow down suitable options." data-rw="Tubwire icyo uzakoresha drone, aho uri n'ibyo igomba kuba ifite. Tuzagufasha guhitamo.">Tell us your use case, location and must-have capabilities. We’ll help narrow down suitable options.</p></article>
           <article class="step"><div class="step-index">STEP 02</div><h3 data-en="Confirm your sourcing plan" data-rw="Emeza gahunda yo kuyishaka">Confirm your sourcing plan</h3><p data-en="Review the proposed DJI model, configuration, estimated costs and shipping details before proceeding." data-rw="Banza urebe ubwoko bwa DJI, ibikoresho, ikiguzi n'uko izoherezwa mbere yo gukomeza.">Review the proposed DJI model, configuration, estimated costs and shipping details before proceeding.</p></article>
           <article class="step"><div class="step-index">STEP 03</div><h3 data-en="Track delivery to Rwanda" data-rw="Kurikirana uko igera mu Rwanda">Track delivery to Rwanda</h3><p data-en="We coordinate the order and shipping updates, then guide you through the handover in Rwanda." data-rw="Dukurikirana itumizwa n'amakuru y'ubwikorezi, tukagufasha kuyakira mu Rwanda.">We coordinate the order and shipping updates, then guide you through the handover in Rwanda.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="team-section" id="team">
+      <div class="wrap">
+        <div class="section-heading">
+          <div class="section-kicker" data-en="Meet the team" data-rw="Menya itsinda">Meet the team</div>
+          <h2 data-en="The people behind Fortis Drones." data-rw="Abantu bari inyuma ya Fortis Drones.">The people behind Fortis Drones.</h2>
+          <p data-en="Get to know the team supporting your drone sourcing journey." data-rw="Menya itsinda rigufasha mu rugendo rwo gushaka drone.">Get to know the team supporting your drone sourcing journey.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <div class="team-avatar">
+              <img src="assets/team-profile-placeholder.svg" alt="Profile photo placeholder for Butera Bruno">
+            </div>
+            <div>
+              <div class="team-role" data-en="Founder" data-rw="Uwashinze">Founder</div>
+              <h3>Butera Bruno</h3>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="team-avatar">
+              <img src="assets/team-profile-placeholder.svg" alt="Profile photo placeholder for Nsenga Nigel">
+            </div>
+            <div>
+              <div class="team-role" data-en="Marketing manager" data-rw="Umuyobozi ushinzwe kwamamaza">Marketing manager</div>
+              <h3>Nsenga Nigel</h3>
+            </div>
+          </article>
         </div>
       </div>
     </section>
