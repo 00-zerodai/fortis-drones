@@ -406,6 +406,20 @@
     .parent-brand span { max-width: 180px; color: var(--muted); font-size: 12px; }
     .copyright { color: var(--muted); font-size: 12px; text-align: right; }
     .copyright a { color: var(--lime); text-decoration: none; }
+    .regulatory-warning {
+      padding: 18px 0;
+      border-top: 1px solid rgba(193,229,106,.28);
+      border-bottom: 1px solid var(--line);
+      background: rgba(193,229,106,.035);
+    }
+    .regulatory-warning p {
+      margin: 0;
+      color: #cbd8df;
+      font-size: 12px;
+      line-height: 1.6;
+    }
+    .regulatory-warning strong { color: var(--lime); }
+    .regulatory-warning a { color: var(--lime); text-decoration-thickness: 1px; }
 
     @media (max-width: 850px) {
       .hero-grid { grid-template-columns: 1fr 0.85fr; gap: 28px; }
@@ -740,6 +754,12 @@
       </div>
     </section>
   </main>
+
+  <aside class="regulatory-warning" aria-label="UAS regulatory notice">
+    <div class="wrap">
+      <p><strong>UAS Regulatory Notice:</strong> <span data-en="All UAS activities must comply with Rwanda Civil Aviation Authority (RCAA) regulations. Operators and owners must declare any UAS at Rwanda's entry points and obtain or verify all required permits, registrations, and authorizations before entry or operation." data-rw="Ibikorwa byose bya UAS bigomba kubahiriza amategeko ya Rwanda Civil Aviation Authority (RCAA). Abakoreshwa n'abanyiri UAS bagomba gutangaza UAS ku nzira zinjiriramo mu Rwanda kandi bakareba cyangwa bagasaba uruhushya, kwiyandikisha, n'ibyemezo byose bisabwa mbere yo kwinjira cyangwa kuyikoresha.">All UAS activities must comply with Rwanda Civil Aviation Authority (RCAA) regulations. Operators and owners must declare any UAS at Rwanda's entry points and obtain or verify all required permits, registrations, and authorizations before entry or operation.</span> <a href="https://caa.gov.rw/" target="_blank" rel="noopener noreferrer" data-en="Check current RCAA requirements" data-rw="Reba ibisabwa n'RCAA">Check current RCAA requirements</a>.</p>
+    </div>
+  </aside>
 
   <footer id="about">
     <div class="wrap footer-inner">

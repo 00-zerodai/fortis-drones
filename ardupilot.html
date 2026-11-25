@@ -120,6 +120,15 @@
     footer { padding: 28px 0; border-top: 1px solid var(--line); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 20px; color: var(--muted); font-size: 12px; }
     .footer-inner a { color: var(--lime); }
+    .regulatory-warning {
+      padding: 18px 0;
+      border-top: 1px solid rgba(193,229,106,.28);
+      border-bottom: 1px solid var(--line);
+      background: rgba(193,229,106,.035);
+    }
+    .regulatory-warning p { margin: 0; color: #cbd8df; font-size: 12px; line-height: 1.6; }
+    .regulatory-warning strong { color: var(--lime); }
+    .regulatory-warning a { color: var(--lime); }
     @media (max-width: 760px) {
       .hero-grid { grid-template-columns: 1fr; gap: 34px; }
       .hero { min-height: auto; padding-top: 128px; }
@@ -264,6 +273,12 @@
       </div>
     </section>
   </main>
+
+  <aside class="regulatory-warning" aria-label="UAS regulatory notice">
+    <div class="wrap">
+      <p><strong>UAS Regulatory Notice:</strong> All UAS activities must comply with Rwanda Civil Aviation Authority (RCAA) regulations. Operators and owners must declare any UAS at Rwanda's entry points and obtain or verify all required permits, registrations, and authorizations before entry or operation. <a href="https://caa.gov.rw/" target="_blank" rel="noopener noreferrer">Check current RCAA requirements</a>.</p>
+    </div>
+  </aside>
 
   <footer>
     <div class="wrap footer-inner">
