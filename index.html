@@ -396,6 +396,7 @@
     footer { padding: 34px 0; border-top: 1px solid var(--line); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 28px; }
     .parent-brand { display: flex; align-items: center; gap: 12px; }
+    .parent-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
     .parent-brand img { width: 46px; height: 50px; object-fit: contain; }
     .parent-wordmark { display: grid; gap: 2px; line-height: 1; }
     .parent-wordmark strong { color: var(--white); font: 800 14px var(--font-display); letter-spacing: .04em; }
@@ -623,7 +624,7 @@
               <img src="assets/team-profile-placeholder.svg" alt="Profile photo placeholder for Nsenga Nigel">
             </div>
             <div>
-              <div class="team-role" data-en="Marketing manager" data-rw="Umuyobozi ushinzwe kwamamaza">Marketing manager</div>
+              <div class="team-role" data-en="Co-founder" data-rw="Umwe mu bashinze">Co-founder</div>
               <h3>Nsenga Nigel</h3>
             </div>
           </article>
@@ -637,7 +638,10 @@
           <div class="section-kicker" data-en="Start a conversation" data-rw="Tangira ikiganiro">Start a conversation</div>
           <h2 data-en="Tell us what you need." data-rw="Tubwire ibyo ukeneye.">Tell us what you need.</h2>
           <p data-en="Share a few details and our team will follow up to discuss suitable options, sourcing and delivery." data-rw="Tanga amakuru make, itsinda ryacu rigufashe kuganira ku bikubereye, uko byashakwa n'uko byakugeraho.">Share a few details and our team will follow up to discuss suitable options, sourcing and delivery.</p>
-          <div class="contact-note"><span data-en="Prefer WhatsApp?" data-rw="Wifuza gukoresha WhatsApp?">Prefer WhatsApp?</span> <a href="https://wa.me/250788504946" target="_blank" rel="noreferrer">+250 788 504 946 ↗</a></div>
+          <div class="contact-note">
+            <div><span data-en="Prefer WhatsApp?" data-rw="Wifuza gukoresha WhatsApp?">Prefer WhatsApp?</span> <a href="https://wa.me/250788504946" target="_blank" rel="noreferrer">+250 788 504 946 ↗</a></div>
+            <div><span data-en="Email us:" data-rw="Twandikire kuri email:">Email us:</span> <a href="mailto:b.bruno@fortisbpo.com">b.bruno@fortisbpo.com</a></div>
+          </div>
         </div>
         <form class="inquiry-form" onsubmit="return handleSourcingInquiry(event)">
           <div class="field"><label for="contact-name" data-en="Your name" data-rw="Amazina yawe">Your name</label><input id="contact-name" name="name" autocomplete="name" required></div>
@@ -664,8 +668,10 @@
   <footer id="about">
     <div class="wrap footer-inner">
       <div class="parent-brand">
-        <img src="assets/fortis-global-bpo-mark-clean.png" alt="">
-        <span class="parent-wordmark"><strong>FORTIS</strong><span>BPO</span></span>
+        <a class="parent-logo" href="https://fortisbpo.com" aria-label="Visit Fortis BPO website">
+          <img src="assets/fortis-global-bpo-mark-clean.png" alt="">
+          <span class="parent-wordmark"><strong>FORTIS</strong><span>BPO</span></span>
+        </a>
         <span data-en="Fortis Drones is part of Fortis Global BPO." data-rw="Fortis Drones ni ishami rya Fortis Global BPO.">Fortis Drones is part of Fortis Global BPO.</span>
       </div>
       <div class="copyright">
